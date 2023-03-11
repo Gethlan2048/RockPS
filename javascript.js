@@ -1,6 +1,18 @@
 //declare userScore, computerScore
 //get and return the computers choice of rock,paper,scissors
-
+function getComputerChoice()
+{
+    let choice = parseInt(Math.random(Math.floor())*3);
+    if (choice === 0)
+    {
+        return "rock";
+    }
+    else if (choice === 1)
+        return "paper";
+    else if (choice === 2)
+        return "scissors";
+}
+console.log(getComputerChoice());
 //get the users choice
 //compare the computer/user choice
 //play until computer or user have 5 points
